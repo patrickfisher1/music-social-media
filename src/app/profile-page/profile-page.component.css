@@ -1,0 +1,45 @@
+.flex-grid {
+  display: flex;
+}
+.col {
+  flex: 1;
+  margin: 0 .75em;
+  text-align: center;
+  overflow-y: auto;
+}
+.col::-webkit-scrollbar-track
+{
+    display: none;
+}
+
+.col::-webkit-scrollbar
+{
+	width: 10px;
+}
+
+.col::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+.blue-bg {
+  height: 800px;
+  background: #2f73a5;
+  border-radius: 20px;
+}
+.green-bg {
+  height: 800px;
+  background: #49821D;
+  border-radius: 20px;
+}
+.red-bg {
+  height: 800px;
+  background: #A52F2F;
+  border-radius: 20px;
+}
+
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
+}
