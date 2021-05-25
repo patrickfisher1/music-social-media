@@ -1,27 +1,3 @@
-.flex-grid {
-  display: flex;
-}
-.col {
-  flex: 1;
-  margin: 1em 1em;
-  text-align: center;
-  overflow-y: auto;
-}
-.col::-webkit-scrollbar-track
-{
-    display: none;
-}
-
-.col::-webkit-scrollbar
-{
-	width: 10px;
-}
-
-.col::-webkit-scrollbar-thumb
-{
-	background-color: #000000;
-	border: 2px solid #555555;
-}
 .blue-bg {
   height: 800px;
   background: #2f73a5;

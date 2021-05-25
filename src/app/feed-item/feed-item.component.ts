@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-info-image',
-  templateUrl: './info-image.component.html',
-  styleUrls: ['./info-image.component.css']
+  selector: 'app-feed-item',
+  templateUrl: './feed-item.component.html',
+  styleUrls: ['./feed-item.component.css']
 })
-export class InfoImageComponent implements OnInit {
+export class FeedItemComponent implements OnInit {
 
   constructor() { }
   @Input() text: string;

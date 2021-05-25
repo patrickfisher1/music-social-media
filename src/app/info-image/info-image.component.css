@@ -9,3 +9,10 @@ div {
   align-items: center;
   margin: .5em .5em;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+div:hover {
+  opacity: 75%;
+}

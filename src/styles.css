@@ -1,4 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    background-color: #E5E5E5;
-  }
+  background-color: #e5e5e5;
+}
+
+.flex-grid {
+  display: flex;
+}
+.col {
+  flex: 1;
+  margin: 1em 1em;
+  text-align: center;
+  overflow-y: auto;
+}
+.col::-webkit-scrollbar-track {
+  display: none;
+}
+
+.col::-webkit-scrollbar {
+  width: 10px;
+}
+
+.col::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border: 2px solid #555555;
+}

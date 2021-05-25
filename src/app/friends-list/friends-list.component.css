@@ -1,4 +1,5 @@
 div {
     background-color: grey;
     padding: .5rem;
+    border-radius: 20px;
 }
