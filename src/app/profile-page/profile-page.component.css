@@ -3,7 +3,7 @@
 }
 .col {
   flex: 1;
-  margin: 0 .75em;
+  margin: 1em 1em;
   text-align: center;
   overflow-y: auto;
 }
@@ -38,8 +38,24 @@
   border-radius: 20px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .flex-grid {
     display: block;
   }
+}
+.art-img {
+  width: 120px;
+  height: 120px;
+  background-color: grey;
+  margin: 0 1em;
+}
+img {
+  transition: 0.4s cubic-bezier(1, -1, 0, 2);
+  clip-path: circle(50% at 50% 50%);
+}
+img:hover {
+  clip-path: circle(80% at 50% 50%);
+}
+h3 {
+  padding: .625rem 0;
 }

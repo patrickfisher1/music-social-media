@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-info-image',
@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class InfoImageComponent implements OnInit {
 
   constructor() { }
+  @Input() text: string;
+  @Input() imgPath: string;
 
   ngOnInit(): void {
   }
