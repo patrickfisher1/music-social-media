@@ -1,0 +1,20 @@
+.blue-bg {
+  height: 800px;
+  background: #2f73a5;
+  border-radius: 20px;
+}
+.green-bg {
+  height: 800px;
+  background: #49821d;
+  border-radius: 20px;
+}
+.red-bg {
+  height: 800px;
+  background: #a52f2f;
+  border-radius: 20px;
+}
+.turquoise-bg {
+  height: 800px;
+  background: #8fc3ba;
+  border-radius: 20px;
+}

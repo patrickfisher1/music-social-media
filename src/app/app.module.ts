@@ -8,6 +8,9 @@ import { InfoImageComponent } from './info-image/info-image.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FriendsListComponent } from './friends-list/friends-list.component';
+import { MainFeedComponent } from './main-feed/main-feed.component';
+import { MainPageComponent } from './main-page/main-page.component';
+import { FeedItemComponent } from './feed-item/feed-item.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { FriendsListComponent } from './friends-list/friends-list.component';
     ProfilePageComponent,
     InfoImageComponent,
     NavBarComponent,
-    FriendsListComponent
+    FriendsListComponent,
+    MainFeedComponent,
+    MainPageComponent,
+    FeedItemComponent
   ],
   imports: [
     BrowserModule,
