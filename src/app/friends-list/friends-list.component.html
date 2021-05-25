@@ -1,0 +1,8 @@
+<div class="flex-grid">
+    <div class="col">
+        <h4>Friends</h4>
+        <p *ngFor="let item of friendsList; index as i;">
+            <a href="{{item[1]}}">{{item[0]}}</a><br>
+        </p>
+    </div>
+</div>

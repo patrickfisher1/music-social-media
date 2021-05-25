@@ -1,27 +1,37 @@
 <div class="flex-grid">
-    <div class="col">
-        <h3>Recently Played</h3>
-        <app-info-image></app-info-image>
+    <div class="col" style="text-align: left;padding: 3em;">
+        <h3>Profile Info</h3>
+        <img src="assets/img/profile-img.png" class="art-img">
+        <p>
+            <b>{{firstName}} {{lastName}}</b>
+            <br>
+            Location: {{location}}
+            <br>
+            Favorite Artist: {{favArtist}}
+            <br>
+            Favorite Album: {{favAlbum}}
+            <br>
+            Favorite Song: {{favSong}}
+        </p>
+        <app-friends-list [friendsList]="friendsList"></app-friends-list>
         
     </div>
     <div class="col blue-bg">
         <h3>Recently Played</h3>
-        <app-info-image></app-info-image>
-        <app-info-image></app-info-image>
-        <app-info-image></app-info-image>
-        <app-info-image></app-info-image>
-        <app-info-image></app-info-image>
-        <app-info-image></app-info-image>
-        <app-info-image></app-info-image>
-        <app-info-image></app-info-image>
-        <app-info-image></app-info-image>
+        <a *ngFor="let item of recentlyPlayed; index as i;">
+            <app-info-image [text]="item[0]" [imgPath]="item[1]"></app-info-image>
+        </a>
     </div>
     <div class="col green-bg">
         <h3>Highlighted Playlists</h3>
-        <app-info-image></app-info-image>
+        <a *ngFor="let item of highlightedPlaylists; index as i;">
+            <app-info-image [text]="item[0]" [imgPath]="item[1]"></app-info-image>
+        </a>
     </div>
     <div class="col red-bg">
         <h3>Highlighted Albums/Artists</h3>
-        <app-info-image></app-info-image>
+        <a *ngFor="let item of highlightedAlbumsArtists; index as i;">
+            <app-info-image [text]="item[0]" [imgPath]="item[1]"></app-info-image>
+        </a>
     </div>
 </div>
