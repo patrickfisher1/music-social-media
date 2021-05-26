@@ -25,11 +25,11 @@
   background-color: grey;
   margin: 0 1em;
 }
-img {
+.profile-img {
   transition: 0.4s cubic-bezier(1, -1, 0, 2);
   clip-path: circle(50% at 50% 50%);
 }
-img:hover {
+.profile-img:hover {
   clip-path: circle(80% at 50% 50%);
 }
 h3 {

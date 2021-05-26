@@ -10,6 +10,7 @@ export class FeedItemComponent implements OnInit {
   constructor() { }
   @Input() text: string;
   @Input() imgPath: string;
+  @Input() username: string;
   @Input() link: string;
 
   ngOnInit(): void {
