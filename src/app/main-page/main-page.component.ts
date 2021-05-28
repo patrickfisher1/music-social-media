@@ -11,6 +11,7 @@ export class MainPageComponent implements OnInit {
 
   feedItems: string[][] = [];
   friendsRecentsItems: string[][] = [];
+  friendsPlaylistsRecommendItems: string [][] = [];
 
   ngOnInit(): void {
     this.feedItems.push(['Example', 'https://picsum.photos/200', 'username']);
@@ -28,6 +29,11 @@ export class MainPageComponent implements OnInit {
     this.friendsRecentsItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'username', 'songName', 'artistName', 'albumName',]);
     this.friendsRecentsItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'username', 'songName', 'artistName', 'albumName',]);
     this.friendsRecentsItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'username', 'songName', 'artistName', 'albumName',]);
+    
+    this.friendsPlaylistsRecommendItems.push(['https://picsum.photos/200', 'playlistName', 'song', 'artist', '3:10',]);
+    this.friendsPlaylistsRecommendItems.push(['https://picsum.photos/200', 'playlistName', 'song', 'artist', '3:56',]);
+    this.friendsPlaylistsRecommendItems.push(['https://picsum.photos/200', 'playlistName', 'song', 'artist', '4:09',]);
+
 
 }
 }

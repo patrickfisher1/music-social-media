@@ -3,5 +3,8 @@
         <h3>Column 1</h3>
     </div>
     <app-main-feed [feedItems]="feedItems" class="col turquoise-bg"></app-main-feed>
-    <app-friends-recents [friendsRecentsItems]="friendsRecentsItems" class="col red-bg"></app-friends-recents>
+  <div class="darkgrey-bg">
+    <app-friends-recents [friendsRecentsItems]="friendsRecentsItems" class="col grey-bg"></app-friends-recents>
+    <app-friends-playlists-recommend [friendsPlaylistsRecommendItems]="friendsPlaylistsRecommendItems" class="col grey-bg"></app-friends-playlists-recommend>
+    </div>
 </div>
