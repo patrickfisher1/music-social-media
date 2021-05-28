@@ -11,6 +11,8 @@ import { FriendsListComponent } from './friends-list/friends-list.component';
 import { MainFeedComponent } from './main-feed/main-feed.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { FeedItemComponent } from './feed-item/feed-item.component';
+import { FriendsRecentsComponent } from './friends-recents/friends-recents.component';
+import { FriendsRecentsItemComponent } from './friends-recents-item/friends-recents-item.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { FeedItemComponent } from './feed-item/feed-item.component';
     FriendsListComponent,
     MainFeedComponent,
     MainPageComponent,
-    FeedItemComponent
+    FeedItemComponent,
+    FriendsRecentsComponent,
+    FriendsRecentsItemComponent
   ],
   imports: [
     BrowserModule,

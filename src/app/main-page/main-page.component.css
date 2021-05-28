@@ -12,6 +12,7 @@
   height: 800px;
   background: #a52f2f;
   border-radius: 20px;
+  flex: 0 0 350px;
 }
 .turquoise-bg {
   height: 800px;
