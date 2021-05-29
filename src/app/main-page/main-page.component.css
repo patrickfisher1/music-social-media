@@ -1,5 +1,5 @@
 #flexcontainer {
-  width: 2000px;
+  width: 2500px;
   height: 1000px;
   border: 3px solid black;
   display: flex;
@@ -18,7 +18,7 @@
   text-align: center;
   overflow-y: auto;	
   height: 100px;
-  width: 153%;
+  width: 190%;
   background: #2D6F22;
   border-radius: 20px;
   border: 1px solid #555555;
@@ -29,7 +29,7 @@
   text-align: center;
   height: 50%;
   width: 24%;
-  background: #C41AC8;
+  background: #9CA7DF;
   border-radius: 20px;
   overflow-y: auto;	
   border: 1px solid #555555;
@@ -41,7 +41,7 @@
   text-align: center;
   height: 50%;
   width: 24%;
-  background: #9CA7DF;
+  background: #C41AC8;
   border-radius: 20px;
   overflow-y: auto;	
   border: 1px solid #555555;
@@ -65,7 +65,7 @@
   text-align: center;
   height: 50%;
   width: 24%;
-  background: #586e75;
+  background: #073642;
   border-radius: 20px;
   overflow-y: auto;
   border: 1px solid #555555;
@@ -77,7 +77,7 @@
   text-align: center;
   height: 50%;
   width: 24%;
-  background: #073642;
+  background: #586e75;
   border-radius: 20px;
   alignment: right;
   overflow-y: auto;

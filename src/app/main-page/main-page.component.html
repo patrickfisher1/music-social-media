@@ -13,20 +13,7 @@
 	
 	<div class="rec-mus">
         <h3>Recommended Music</h3>  
-			<app-info-image></app-info-image>
-			<app-info-image></app-info-image>	
-			<app-info-image></app-info-image>
-			<app-info-image></app-info-image>
-			<app-info-image></app-info-image>
-			<app-info-image></app-info-image>
-			<app-info-image></app-info-image>
-			<app-info-image></app-info-image>
-			<app-info-image></app-info-image>	
-			<app-info-image></app-info-image>
-			<app-info-image></app-info-image>
-			<app-info-image></app-info-image>
-			<app-info-image></app-info-image>
-			<app-info-image></app-info-image>			
+			<app-general-recommend-music [generalRecommendMusicItems]="generalRecommendMusicItems"></app-general-recommend-music>
     </div>
 	
 	<div class="event-cal">
@@ -55,7 +42,7 @@
 	
 	<div class="frnd-act">
         <h3>Recent Friend Activity</h3>        
-			<app-friends-recents [friendsRecentsItems]="friendsRecentsItems" class="col grey-bg"></app-friends-recents>
+			<app-friends-recents [friendsRecentsItems]="friendsRecentsItems"></app-friends-recents>
 	</div>
 		
 		<div class="hilht-plylst">

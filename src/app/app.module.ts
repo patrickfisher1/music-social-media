@@ -15,6 +15,8 @@ import { FriendsRecentsComponent } from './friends-recents/friends-recents.compo
 import { FriendsRecentsItemComponent } from './friends-recents-item/friends-recents-item.component';
 import { FriendsPlaylistsRecommendComponent } from './friends-playlists-recommend/friends-playlists-recommend.component';
 import { FriendsPlaylistsRecommendItemComponent } from './friends-playlists-recommend-item/friends-playlists-recommend-item.component';
+import { GeneralRecommendMusicComponent} from './general-recommend-music/general-recommend-music.component';
+import { GeneralRecommendMusicItemComponent} from './general-recommend-music-item/general-recommend-music-item.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { FriendsPlaylistsRecommendItemComponent } from './friends-playlists-reco
     FriendsRecentsComponent,
     FriendsRecentsItemComponent,
     FriendsPlaylistsRecommendComponent,
-    FriendsPlaylistsRecommendItemComponent
+    FriendsPlaylistsRecommendItemComponent,
+	GeneralRecommendMusicComponent,
+	GeneralRecommendMusicItemComponent
   ],
   imports: [
     BrowserModule,

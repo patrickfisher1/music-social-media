@@ -26,6 +26,7 @@ div:hover {
 .container {
   background-color: rgba(255, 0, 0, 0.2);
   padding-right: 1em;
+  width: 1150px;
 }
 .profile-img {
   width: 40px;

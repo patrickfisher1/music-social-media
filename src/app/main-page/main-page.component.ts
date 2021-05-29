@@ -12,6 +12,7 @@ export class MainPageComponent implements OnInit {
   feedItems: string[][] = [];
   friendsRecentsItems: string[][] = [];
   friendsPlaylistsRecommendItems: string [][] = [];
+  generalRecommendMusicItems: string[][] = [];
 
   ngOnInit(): void {
     this.feedItems.push(['Example', 'https://picsum.photos/200', 'username']);
@@ -33,7 +34,15 @@ export class MainPageComponent implements OnInit {
     this.friendsPlaylistsRecommendItems.push(['https://picsum.photos/200', 'playlistName', 'song', 'artist', '3:10',]);
     this.friendsPlaylistsRecommendItems.push(['https://picsum.photos/200', 'playlistName', 'song', 'artist', '3:56',]);
     this.friendsPlaylistsRecommendItems.push(['https://picsum.photos/200', 'playlistName', 'song', 'artist', '4:09',]);
-
-
+	
+	this.generalRecommendMusicItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'username', 'songName', 'artistName', 'albumName',]);    
+	this.generalRecommendMusicItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'username', 'songName', 'artistName', 'albumName',]);    
+	this.generalRecommendMusicItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'username', 'songName', 'artistName', 'albumName',]);    
+	this.generalRecommendMusicItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'username', 'songName', 'artistName', 'albumName',]);    
+	this.generalRecommendMusicItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'username', 'songName', 'artistName', 'albumName',]);    
+	this.generalRecommendMusicItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'username', 'songName', 'artistName', 'albumName',]);    
+	this.generalRecommendMusicItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'username', 'songName', 'artistName', 'albumName',]);    
+	this.generalRecommendMusicItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'username', 'songName', 'artistName', 'albumName',]);
+   	this.generalRecommendMusicItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'username', 'songName', 'artistName', 'albumName',]);    
 }
 }
