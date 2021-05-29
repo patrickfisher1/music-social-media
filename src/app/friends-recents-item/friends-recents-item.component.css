@@ -14,15 +14,13 @@
   flex-direction: column;
   align-items: center;
   margin: .5em .5em;
-  
 }
 
 .info {
   display: flex;
   flex-direction: column;
   align-items: end;
-  margin: .5em .5em;
-  
+  margin: .5em .5em; 
 }
 
 a {
@@ -35,7 +33,8 @@ div:hover {
 .container {
   background-color: rgba(255, 0, 0, 0.2);
   padding-right: 1em;
-  width: 550px;
+  width: 96%;
+  border-radius: 20px;
 }
 .profile-img {
   width: 40px;
