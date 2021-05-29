@@ -19,3 +19,15 @@
   background: #8fc3ba;
   border-radius: 20px;
 }
+.grey-bg {
+  height: 800px;
+  background: #586e75;
+  border-radius: 20px;
+}
+.darkgrey-bg {
+height:800px;
+background: #073642;
+border-radius:20px;
+display: flex;
+  flex-direction: column;
+}

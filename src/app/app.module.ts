@@ -13,6 +13,8 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { FeedItemComponent } from './feed-item/feed-item.component';
 import { FriendsRecentsComponent } from './friends-recents/friends-recents.component';
 import { FriendsRecentsItemComponent } from './friends-recents-item/friends-recents-item.component';
+import { FriendsPlaylistsRecommendComponent } from './friends-playlists-recommend/friends-playlists-recommend.component';
+import { FriendsPlaylistsRecommendItemComponent } from './friends-playlists-recommend-item/friends-playlists-recommend-item.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { FriendsRecentsItemComponent } from './friends-recents-item/friends-rece
     MainPageComponent,
     FeedItemComponent,
     FriendsRecentsComponent,
-    FriendsRecentsItemComponent
+    FriendsRecentsItemComponent,
+    FriendsPlaylistsRecommendComponent,
+    FriendsPlaylistsRecommendItemComponent
   ],
   imports: [
     BrowserModule,
