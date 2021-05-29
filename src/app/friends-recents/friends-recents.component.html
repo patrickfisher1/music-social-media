@@ -1,0 +1,6 @@
+<div>
+    <h3>Friends Recents</h3>
+    <a *ngFor="let item of friendsRecentsItems; index as i;">
+        <app-friends-recents-item [imgPath]="item[0]" [albumPath]="item[1]" [username]="item[2]" [song]="item[3]" [artist]="item[4]" [album]="item[5]" [link]=""></app-friends-recents-item>
+    </a>
+</div>
