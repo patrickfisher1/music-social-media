@@ -1,3 +1,90 @@
+#flexcontainer {
+  width: 2000px;
+  height: 1000px;
+  border: 3px solid black;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 5px;
+}
+
+.container{
+	margin: 10px;
+	flex-flow: column wrap;
+}
+
+.top-bar{
+  flex: 1;
+  margin: 0 .75em;
+  text-align: center;
+  overflow-y: auto;	
+  height: 100px;
+  width: 153%;
+  background: #2D6F22;
+  border-radius: 20px;
+  border: 1px solid #555555;
+}
+
+.rec-mus {
+  margin: 0 .75em;
+  text-align: center;
+  height: 50%;
+  width: 24%;
+  background: #C41AC8;
+  border-radius: 20px;
+  overflow-y: auto;	
+  border: 1px solid #555555;
+  gap: 5px;
+}
+
+.event-cal {
+  margin: 0 .75em;
+  text-align: center;
+  height: 50%;
+  width: 24%;
+  background: #9CA7DF;
+  border-radius: 20px;
+  overflow-y: auto;	
+  border: 1px solid #555555;
+  gap: 5px;
+}
+
+.scroll-fd {
+  margin: 0 .75em;
+  text-align: center;
+  height: 100%;
+  width: 48%;
+  background: #8FC3BA;
+  border-radius: 20px;
+  overflow-y: auto;
+  border: 1px solid #555555;
+  gap: 5px;
+}
+
+.hilht-plylst {
+  margin: 0 .75em;
+  text-align: center;
+  height: 50%;
+  width: 24%;
+  background: #586e75;
+  border-radius: 20px;
+  overflow-y: auto;
+  border: 1px solid #555555;
+  gap: 5px;
+}
+
+.frnd-act {
+  margin: 0 .75em;
+  text-align: center;
+  height: 50%;
+  width: 24%;
+  background: #073642;
+  border-radius: 20px;
+  alignment: right;
+  overflow-y: auto;
+  border: 1px solid #555555;
+  gap: 5px;
+}
+
 .blue-bg {
   height: 800px;
   background: #2f73a5;
@@ -30,4 +117,10 @@ background: #073642;
 border-radius:20px;
 display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
 }
