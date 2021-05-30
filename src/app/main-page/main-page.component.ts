@@ -13,6 +13,7 @@ export class MainPageComponent implements OnInit {
   friendsRecentsItems: string[][] = [];
   friendsPlaylistsRecommendItems: string [][] = [];
   generalRecommendMusicItems: string[][] = [];
+  upcomingEventsItems: string[][] = [];
 
   ngOnInit(): void {
     this.feedItems.push(['Example', 'https://picsum.photos/200', 'username']);
@@ -74,6 +75,15 @@ export class MainPageComponent implements OnInit {
 	this.generalRecommendMusicItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'username', 'songName', 'artistName', 'albumName',]);    
 	this.generalRecommendMusicItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'username', 'songName', 'artistName', 'albumName',]);    
 	this.generalRecommendMusicItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'username', 'songName', 'artistName', 'albumName',]);
-   	this.generalRecommendMusicItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'username', 'songName', 'artistName', 'albumName',]);    
+   	this.generalRecommendMusicItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'username', 'songName', 'artistName', 'albumName',]); 
+
+	this.upcomingEventsItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'artist', 'venue', 'YYYY/MM/DD',]);
+	this.upcomingEventsItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'artist', 'venue', 'YYYY/MM/DD',]);
+	this.upcomingEventsItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'artist', 'venue', 'YYYY/MM/DD',]);
+	this.upcomingEventsItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'artist', 'venue', 'YYYY/MM/DD',]);
+	this.upcomingEventsItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'artist', 'venue', 'YYYY/MM/DD',]);
+	this.upcomingEventsItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'artist', 'venue', 'YYYY/MM/DD',]);
+	this.upcomingEventsItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'artist', 'venue', 'YYYY/MM/DD',]);
+	this.upcomingEventsItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'artist', 'venue', 'YYYY/MM/DD',]);
 }
 }
