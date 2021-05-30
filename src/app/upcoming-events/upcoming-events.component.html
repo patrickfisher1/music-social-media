@@ -1,0 +1,6 @@
+<div>
+    <h3></h3>
+    <a *ngFor="let item of upcomingEventsItems; index as i;">
+		<app-upcoming-events-item [imgPath]="item[0]" [artPath]="item[1]" [artist]="item[2]" [venue]="item[3]" [date]="item[4]" [link]=""></app-upcoming-events-item>
+    </a>
+</div>

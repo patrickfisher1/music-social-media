@@ -50,6 +50,7 @@
   overflow-y: auto;	
   border: 1px solid #555555;
   gap: 5px;
+  scrollbar-width: none;
 }
 .event-cal::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
@@ -65,6 +66,7 @@
   overflow-y: auto;
   border: 1px solid #555555;
   gap: 5px;
+  scrollbar-width: none;
 }
 .scroll-fd::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
@@ -80,6 +82,7 @@
   overflow-y: auto;
   border: 1px solid #555555;
   gap: 5px;
+  scrollbar-width: none;
 }
 .hilht-plylst::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
@@ -96,6 +99,7 @@
   overflow-y: auto;
   border: 1px solid #555555;
   gap: 5px;
+  scrollbar-width: none;
 }
 .frnd-act::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
