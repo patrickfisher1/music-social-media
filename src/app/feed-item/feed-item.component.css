@@ -1,7 +1,6 @@
 .art-img {
   width: 120px;
   height: 120px;
-  background-color: grey;
   margin: 0 1em;
 }
 .col {
@@ -24,7 +23,7 @@ div:hover {
   opacity: 75%;
 }
 .container {
-  background-color: rgba(255, 0, 0, 0.2);
+  background-color: rgb(170, 81, 81);
   padding-right: 1em;
 }
 .profile-img {
