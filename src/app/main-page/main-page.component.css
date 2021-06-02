@@ -47,7 +47,6 @@
   overflow-y: auto;	
   border: 1px solid #555555;
   gap: 5px;
-  scrollbar-width: none;
 }
 
 
@@ -61,7 +60,6 @@
   overflow-y: auto;
   border: 1px solid #555555;
   gap: 5px;
-  scrollbar-width: none;
 }
 
 
@@ -75,7 +73,6 @@
   overflow-y: auto;
   border: 1px solid #555555;
   gap: 5px;
-  scrollbar-width: none;
 }
 
 
@@ -90,7 +87,6 @@
   overflow-y: auto;
   border: 1px solid #555555;
   gap: 5px;
-  scrollbar-width: none;
 }
 
 
