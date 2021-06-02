@@ -32,13 +32,10 @@
   background: #9CA7DF;
   border-radius: 20px;
   overflow-y: scroll;
-  scrollbar-width: none;
   border: 1px solid #555555;
   gap: 5px;
 }
-.rec-mus::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-}
+
 
 .event-cal {
   margin: 0 .75em;
@@ -50,11 +47,8 @@
   overflow-y: auto;	
   border: 1px solid #555555;
   gap: 5px;
-  scrollbar-width: none;
 }
-.event-cal::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-}
+
 
 .scroll-fd {
   margin: 0 .75em;
@@ -66,11 +60,8 @@
   overflow-y: auto;
   border: 1px solid #555555;
   gap: 5px;
-  scrollbar-width: none;
 }
-.scroll-fd::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-}
+
 
 .hilht-plylst {
   margin: 0 .75em;
@@ -82,11 +73,8 @@
   overflow-y: auto;
   border: 1px solid #555555;
   gap: 5px;
-  scrollbar-width: none;
 }
-.hilht-plylst::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-}
+
 
 .frnd-act {
   margin: 0 .75em;
@@ -99,11 +87,8 @@
   overflow-y: auto;
   border: 1px solid #555555;
   gap: 5px;
-  scrollbar-width: none;
 }
-.frnd-act::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-}
+
 
 .blue-bg {
   height: 800px;

@@ -1,4 +1,4 @@
-<div>
+<div class="col hilht-plylst">
     <h3>Friends & Public Playlists</h3>
     <a *ngFor="let item of friendsPlaylistsRecommendItems; index as i;">
         <app-friends-playlists-recommend-item [link]="item[0]" [playlistName]="item[1]" [song]="item[2]" [artist]="item[3]" [length]="item[4]"></app-friends-playlists-recommend-item>
