@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainPageComponent } from './main-page.component';
+import { UpcomingEventsComponent } from './upcoming-events.component';
 
-describe('MainPageComponent', () => {
-  let component: MainPageComponent;
-  let fixture: ComponentFixture<MainPageComponent>;
+describe('UpcomingEventsComponent', () => {
+  let component: UpcomingEventsComponent;
+  let fixture: ComponentFixture<UpcomingEventsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MainPageComponent ]
+      declarations: [ UpcomingEventsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MainPageComponent);
+    fixture = TestBed.createComponent(UpcomingEventsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

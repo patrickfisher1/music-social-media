@@ -1,0 +1,6 @@
+<div>
+    <h3></h3>
+    <a *ngFor="let item of generalRecommendMusicItems; index as i;">
+		<app-general-recommend-music-item [imgPath]="item[0]" [albumPath]="item[1]" [username]="item[2]" [song]="item[3]" [artist]="item[4]" [album]="item[5]" [link]=""></app-general-recommend-music-item>
+    </a>
+</div>

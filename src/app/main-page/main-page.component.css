@@ -1,3 +1,110 @@
+#flexcontainer {
+  width: 1750px;
+  height: 900px;
+  border: 3px hidden;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 5px;
+}
+
+.container{
+	margin: 10px;
+	flex-flow: column wrap;
+}
+
+.top-bar{
+  flex: 1;
+  margin: 0 .75em;
+  text-align: center;
+  overflow-y: auto;	
+  height: 100px;
+  width: 133%;
+  background: #2D6F22;
+  border-radius: 20px;
+  border: 1px solid #555555;
+}
+
+.rec-mus {
+  margin: 0 .75em;
+  text-align: center;
+  height: 50%;
+  width: 24%;
+  background: #9CA7DF;
+  border-radius: 20px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  border: 1px solid #555555;
+  gap: 5px;
+}
+.rec-mus::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.event-cal {
+  margin: 0 .75em;
+  text-align: center;
+  height: 50%;
+  width: 24%;
+  background: #C41AC8;
+  border-radius: 20px;
+  overflow-y: auto;	
+  border: 1px solid #555555;
+  gap: 5px;
+  scrollbar-width: none;
+}
+.event-cal::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.scroll-fd {
+  margin: 0 .75em;
+  text-align: center;
+  height: 100%;
+  width: 48%;
+  background: #8FC3BA;
+  border-radius: 20px;
+  overflow-y: auto;
+  border: 1px solid #555555;
+  gap: 5px;
+  scrollbar-width: none;
+}
+.scroll-fd::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.hilht-plylst {
+  margin: 0 .75em;
+  text-align: center;
+  height: 50%;
+  width: 24%;
+  background: #073642;
+  border-radius: 20px;
+  overflow-y: auto;
+  border: 1px solid #555555;
+  gap: 5px;
+  scrollbar-width: none;
+}
+.hilht-plylst::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.frnd-act {
+  margin: 0 .75em;
+  text-align: center;
+  height: 50%;
+  width: 24%;
+  background: #586e75;
+  border-radius: 20px;
+  alignment: right;
+  overflow-y: auto;
+  border: 1px solid #555555;
+  gap: 5px;
+  scrollbar-width: none;
+}
+.frnd-act::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
 .blue-bg {
   height: 800px;
   background: #2f73a5;
@@ -25,4 +132,10 @@ background: #073642;
 border-radius:20px;
 display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
 }

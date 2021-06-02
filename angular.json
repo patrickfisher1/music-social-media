@@ -122,5 +122,8 @@
       }
     }
   },
-  "defaultProject": "music-social-media"
+  "defaultProject": "music-social-media",
+  "cli": {
+    "analytics": false
+  }
 }
