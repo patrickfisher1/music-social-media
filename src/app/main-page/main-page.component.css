@@ -47,6 +47,7 @@
   overflow-y: auto;	
   border: 1px solid #555555;
   gap: 5px;
+  scrollbar-width: none;
 }
 
 
@@ -60,6 +61,7 @@
   overflow-y: auto;
   border: 1px solid #555555;
   gap: 5px;
+  scrollbar-width: none;
 }
 
 
@@ -73,6 +75,7 @@
   overflow-y: auto;
   border: 1px solid #555555;
   gap: 5px;
+  scrollbar-width: none;
 }
 
 
@@ -87,6 +90,7 @@
   overflow-y: auto;
   border: 1px solid #555555;
   gap: 5px;
+  scrollbar-width: none;
 }
 
 
@@ -105,11 +109,6 @@
   background: #a52f2f;
   border-radius: 20px;
   flex: 0 0 350px;
-}
-.turquoise-bg {
-  height: 800px;
-  background: #8fc3ba;
-  border-radius: 20px;
 }
 .grey-bg {
   height: 800px;
