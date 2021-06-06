@@ -84,6 +84,6 @@ export class MainPageComponent implements OnInit {
 	this.upcomingEventsItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'artist', 'venue', 'YYYY/MM/DD',]);
 	this.upcomingEventsItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'artist', 'venue', 'YYYY/MM/DD',]);
 	this.upcomingEventsItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'artist', 'venue', 'YYYY/MM/DD',]);
-	this.upcomingEventsItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'artist', 'venue', 'YYYY/MM/DD',]);
+	this.upcomingEventsItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'artist', 'venue', 'YYYY/MM/DD',]);	
 }
 }
