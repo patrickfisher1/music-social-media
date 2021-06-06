@@ -19,6 +19,8 @@ import { GeneralRecommendMusicComponent} from './general-recommend-music/general
 import { GeneralRecommendMusicItemComponent} from './general-recommend-music-item/general-recommend-music-item.component';
 import { UpcomingEventsComponent} from './upcoming-events/upcoming-events.component';
 import { UpcomingEventsItemComponent} from './upcoming-events-item/upcoming-events-item.component';
+import { PlaylistPopoutComponent} from './playlist-popout/playlist-popout.component';
+import { PlaylistPopoutItemComponent} from './playlist-popout-item/playlist-popout-item.component';  
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { UpcomingEventsItemComponent} from './upcoming-events-item/upcoming-even
 	GeneralRecommendMusicComponent,
 	GeneralRecommendMusicItemComponent,
 	UpcomingEventsComponent,
-	UpcomingEventsItemComponent
+	UpcomingEventsItemComponent,
+	PlaylistPopoutComponent,
+	PlaylistPopoutItemComponent
   ],
   imports: [
     BrowserModule,
