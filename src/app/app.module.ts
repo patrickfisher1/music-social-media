@@ -15,12 +15,12 @@ import { FriendsRecentsComponent } from './friends-recents/friends-recents.compo
 import { FriendsRecentsItemComponent } from './friends-recents-item/friends-recents-item.component';
 import { FriendsPlaylistsRecommendComponent } from './friends-playlists-recommend/friends-playlists-recommend.component';
 import { FriendsPlaylistsRecommendItemComponent } from './friends-playlists-recommend-item/friends-playlists-recommend-item.component';
-import { GeneralRecommendMusicComponent} from './general-recommend-music/general-recommend-music.component';
-import { GeneralRecommendMusicItemComponent} from './general-recommend-music-item/general-recommend-music-item.component';
-import { UpcomingEventsComponent} from './upcoming-events/upcoming-events.component';
-import { UpcomingEventsItemComponent} from './upcoming-events-item/upcoming-events-item.component';
-import { PlaylistPopoutComponent} from './playlist-popout/playlist-popout.component';
-import { PlaylistPopoutItemComponent} from './playlist-popout-item/playlist-popout-item.component';  
+import { GeneralRecommendMusicComponent } from './general-recommend-music/general-recommend-music.component';
+import { GeneralRecommendMusicItemComponent } from './general-recommend-music-item/general-recommend-music-item.component';
+import { UpcomingEventsComponent } from './upcoming-events/upcoming-events.component';
+import { UpcomingEventsItemComponent } from './upcoming-events-item/upcoming-events-item.component';
+import { PlaylistPopoutComponent } from './playlist-popout/playlist-popout.component';
+import { PlaylistPopoutItemComponent } from './playlist-popout-item/playlist-popout-item.component';
 
 @NgModule({
   declarations: [
@@ -36,19 +36,15 @@ import { PlaylistPopoutItemComponent} from './playlist-popout-item/playlist-popo
     FriendsRecentsItemComponent,
     FriendsPlaylistsRecommendComponent,
     FriendsPlaylistsRecommendItemComponent,
-	GeneralRecommendMusicComponent,
-	GeneralRecommendMusicItemComponent,
-	UpcomingEventsComponent,
-	UpcomingEventsItemComponent,
-	PlaylistPopoutComponent,
-	PlaylistPopoutItemComponent
+    GeneralRecommendMusicComponent,
+    GeneralRecommendMusicItemComponent,
+    UpcomingEventsComponent,
+    UpcomingEventsItemComponent,
+    PlaylistPopoutComponent,
+    PlaylistPopoutItemComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

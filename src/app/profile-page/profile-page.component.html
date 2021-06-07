@@ -14,7 +14,7 @@
             Favorite Song: {{favSong}}
         </p>
         <app-friends-list [friendsList]="friendsList"></app-friends-list>
-        
+
     </div>
     <div class="col blue-bg">
         <h3>Recently Played</h3>
@@ -24,7 +24,7 @@
     </div>
     <div class="col green-bg">
         <h3>Highlighted Playlists</h3>
-        <a *ngFor="let item of highlightedPlaylists; index as i;">
+        <a (click)="open(content)" *ngFor="let item of highlightedPlaylists; index as i;">
             <app-info-image [text]="item[0]" [imgPath]="item[1]"></app-info-image>
         </a>
     </div>
@@ -35,3 +35,9 @@
         </a>
     </div>
 </div>
+
+<ng-template #content let-modal>
+
+    <app-playlist-popout></app-playlist-popout>
+
+</ng-template>
