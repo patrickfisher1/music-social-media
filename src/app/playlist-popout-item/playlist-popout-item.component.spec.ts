@@ -8,9 +8,8 @@ describe('PlaylistPopoutItemComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PlaylistPopoutItemComponent ]
-    })
-    .compileComponents();
+      declarations: [PlaylistPopoutItemComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

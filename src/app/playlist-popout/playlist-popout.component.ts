@@ -1,48 +1,215 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-playlist-popout',
   templateUrl: './playlist-popout.component.html',
-  styleUrls: ['./playlist-popout.component.css']
+  styleUrls: ['./playlist-popout.component.css'],
 })
 export class PlaylistPopoutComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  @Input() playlistName = 'Music Playlist';
+  @Input() playlistLen = '2:33:17';
+  @Input() numSongs = '28';
+  @Input() playlistCrtr = 'Chuck Berry';
+  @Input() playlistItems: string[][] = [];
 
-  playlistName = 'Music Playlist';
-  playlistLen = '2:33:17';
-  numSongs = '28';
-  playlistCrtr = 'Chuck Berry';
-  playlistItems: string[][] = [];
- 
   ngOnInit(): void {
-    this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-    this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);
-	this.playlistItems.push(['https://picsum.photos/200', 'https://picsum.photos/200', 'songName', 'artistName', 'albumName']);	
-}
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+    this.playlistItems.push([
+      'https://picsum.photos/200',
+      'https://picsum.photos/200',
+      'songName',
+      'artistName',
+      'albumName',
+    ]);
+  }
 }

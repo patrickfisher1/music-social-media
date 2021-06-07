@@ -3,14 +3,11 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-general-recommend-music',
   templateUrl: './general-recommend-music.component.html',
-  styleUrls: ['./general-recommend-music.component.css']
+  styleUrls: ['./general-recommend-music.component.css'],
 })
 export class GeneralRecommendMusicComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
   @Input() generalRecommendMusicItems: string[][] = [];
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

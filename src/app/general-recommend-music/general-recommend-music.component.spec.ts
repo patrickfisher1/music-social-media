@@ -8,9 +8,8 @@ describe('GeneralRecommendMusicComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GeneralRecommendMusicComponent ]
-    })
-    .compileComponents();
+      declarations: [GeneralRecommendMusicComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
