@@ -1,4 +1,4 @@
-<a href="{{link}}">
+<a >
     <div class="col container">
         <div class="row">
             <img src="{{imgPath}}" class="profile-img">  
@@ -8,8 +8,16 @@
         </div>
         <div class="info">
          <p>{{artist}}</p>
-        <p>{{venue}}</p>
-        <p>{{date}}</p>
+         <p>{{venue}}</p>
+         <p>{{date}}</p>
         </div>
+		<button class="button" title="Add to Cal">📅</button>
+		<button class="button" title="Comment" (click)="open(content)">💬</button>
     </div>
 </a>
+
+<ng-template #content let-modal>
+
+    <app-comment-popout></app-comment-popout>
+
+</ng-template>

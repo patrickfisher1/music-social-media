@@ -21,6 +21,8 @@ import { UpcomingEventsComponent } from './upcoming-events/upcoming-events.compo
 import { UpcomingEventsItemComponent } from './upcoming-events-item/upcoming-events-item.component';
 import { PlaylistPopoutComponent } from './playlist-popout/playlist-popout.component';
 import { PlaylistPopoutItemComponent } from './playlist-popout-item/playlist-popout-item.component';
+import { CommentPopoutComponent } from './comment-popout/comment-popout.component';
+import { CommentPopoutItemComponent } from './comment-popout-item/comment-popout-item.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { PlaylistPopoutItemComponent } from './playlist-popout-item/playlist-pop
     UpcomingEventsItemComponent,
     PlaylistPopoutComponent,
     PlaylistPopoutItemComponent,
+    CommentPopoutComponent,
+    CommentPopoutItemComponent
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
