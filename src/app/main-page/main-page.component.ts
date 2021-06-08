@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { CommentPopoutComponent } from '../comment-popout/comment-popout.component';
+
 
 @Component({
   selector: 'app-main-page',
@@ -6,13 +9,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-page.component.css'],
 })
 export class MainPageComponent implements OnInit {
-  constructor() {}
+  constructor(private modalService: NgbModal) {}
 
   feedItems: string[][] = [];
   friendsRecentsItems: string[][] = [];
   friendsPlaylistsRecommendItems: string[][] = [];
   generalRecommendMusicItems: string[][] = [];
   upcomingEventsItems: string[][] = [];
+    open(content): void {
+    this.modalService.open(content, { modalDialogClass: 'hidden-modal' });
+  }
 
   ngOnInit(): void {
     this.feedItems.push(['Example', 'https://picsum.photos/200', 'username']);
