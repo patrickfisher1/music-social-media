@@ -1,0 +1,22 @@
+<div id="flexcontainer">
+    <div class="col blue-bg" style="text-align: left;padding: 3em;">
+        <h3>Playlist Info</h3>
+        <img src="assets/img/profile-img.png" class="art-img playlist-img">
+        <p>
+            <b>{{playlistName}}</b>
+            <br>
+            <b>Total Runtime: {{playlistLen}}</b>
+            <br>
+            <b>Song Count: {{numSongs}}</b>
+            <br>
+            <b>Playlist Curator: {{playlistCrtr}}</b>            
+        </p>
+		<button class = "button" title="Share Playlist">SHARE</button>
+    <div class="col green-bg">
+        <h3>Song List</h3>
+        <a *ngFor="let item of playlistItems; index as i;">
+            <app-song-info-popout-item [imgPath]="item[0]" [albumPath]="item[1]" [song]="item[2]" [artist]="item[3]" [album]="item[4]" [link]=""></app-song-info-popout-item>
+        </a>
+    </div>
+
+</div>
