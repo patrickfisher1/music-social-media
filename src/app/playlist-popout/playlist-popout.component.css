@@ -29,7 +29,7 @@
   transition: all ease-in-out 0.2s;
   cursor: pointer;
   border-radius: 20px;
-
+  margin: .1em;
 }
 .button:hover{
   border: 1px solid #888;

@@ -15,7 +15,7 @@ export class SongInfoPopoutComponent implements OnInit {
   @Input() artist = 'Sample Artist';
   @Input() album = 'Sample Album'
   @Input() songInfoItems: string[][] = [];
-open(content): void {
+	open(content): void {
     this.modalService.open(content, { modalDialogClass: 'hidden-modal' });
   }
   ngOnInit(): void {

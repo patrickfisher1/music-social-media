@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-playlist-popout',
@@ -6,14 +7,16 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./playlist-popout.component.css'],
 })
 export class PlaylistPopoutComponent implements OnInit {
-  constructor() {}
+  constructor(private modalService: NgbModal) {}
 
   @Input() playlistName = 'Music Playlist';
   @Input() playlistLen = '2:33:17';
   @Input() numSongs = '28';
   @Input() playlistCrtr = 'Chuck Berry';
   @Input() playlistItems: string[][] = [];
-
+	open(content): void {
+    this.modalService.open(content, { modalDialogClass: 'hidden-modal' });
+  }
   ngOnInit(): void {
     this.playlistItems.push([
       'https://picsum.photos/200',

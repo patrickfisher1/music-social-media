@@ -12,6 +12,10 @@
             <b>Playlist Curator: {{playlistCrtr}}</b>            
         </p>
 		<button class = "button" title="Share Playlist">SHARE</button>
+		<button class="button" title="Like Playlist">👍</button>
+		<button class="button" title="Dislike Playlise">👎</button>
+		<button class="button" title="Save to Favorite Playlists">➕</button>
+		<button class="button" title="Comment" (click)="open(comment)">💬</button>
     <div class="col green-bg">
         <h3>Song List</h3>
         <a *ngFor="let item of playlistItems; index as i;">
@@ -20,3 +24,8 @@
     </div>
 
 </div>
+<ng-template #comment let-modal>
+
+    <app-comment-popout></app-comment-popout>
+
+</ng-template>
