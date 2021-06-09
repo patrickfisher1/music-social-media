@@ -1,4 +1,4 @@
-<a href="{{link}}">
+<a (click)="open(content)">
     <div class="col container">
         <div class="row">
             <img src="{{imgPath}}" class="profile-img">  
@@ -12,8 +12,13 @@
         <p>{{artist}}</p>
         <p>{{album}}</p>
         </div>
-		<button class="button" title="Like">👍</button>
-		<button class="button" title="Dislike">👎</button>
+		<button class="button" title="Like Recommendation">👍</button>
+		<button class="button" title="Dislike Recommendation">👎</button>
 		<button class="button" title="Save to Favorite">➕</button>
     </div>
 </a>
+<ng-template #content let-modal>
+
+    <app-song-info-popout></app-song-info-popout>
+
+</ng-template>

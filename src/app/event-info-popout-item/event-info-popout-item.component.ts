@@ -7,11 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class EventInfoPopoutItemComponent implements OnInit {
   constructor() {}
-  @Input() imgPath: string;
-  @Input() albumPath: string;
-  @Input() song: string;
-  @Input() artist: string;
-  @Input() album: string;
+  @Input() infoType: string;
+  @Input() info: string;
   @Input() link: string;
 
   ngOnInit(): void {}

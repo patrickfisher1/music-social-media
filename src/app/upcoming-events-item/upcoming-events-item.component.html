@@ -1,4 +1,4 @@
-<a >
+<a>
     <div class="col container">
         <div class="row">
             <img src="{{imgPath}}" class="profile-img">  
@@ -12,12 +12,18 @@
          <p>{{date}}</p>
         </div>
 		<button class="button" title="Add to Cal">📅</button>
-		<button class="button" title="Comment" (click)="open(content)">💬</button>
+		<button class="button" title="Comment" (click)="open(comment)">💬</button>
+		<button class="button" title="Info" (click)="open(eventInfo)">ℹ️</button>
     </div>
 </a>
 
-<ng-template #content let-modal>
+<ng-template #comment let-modal>
 
     <app-comment-popout></app-comment-popout>
+
+</ng-template>
+<ng-template #eventInfo let-modal>
+
+    <app-event-info-popout></app-event-info-popout>
 
 </ng-template>

@@ -39,6 +39,11 @@
   background-color: #0067A5 ;
 }
 
+.hidden-modal .modal-content {
+  background: none;
+  border: none;
+}
+
 a {
   text-decoration: none;
   color: black;

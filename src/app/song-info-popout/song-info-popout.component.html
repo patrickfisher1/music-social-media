@@ -1,22 +1,32 @@
 <div id="flexcontainer">
     <div class="col blue-bg" style="text-align: left;padding: 3em;">
-        <h3>Playlist Info</h3>
-        <img src="assets/img/profile-img.png" class="art-img playlist-img">
+        <h3>Song Info</h3>
+        <img src="https://picsum.photos/200" class="art-img playlist-img">
         <p>
-            <b>{{playlistName}}</b>
+            <b>{{songName}}</b>
             <br>
-            <b>Total Runtime: {{playlistLen}}</b>
+            <b>Total Runtime: {{songLen}}</b>
             <br>
-            <b>Song Count: {{numSongs}}</b>
-            <br>
-            <b>Playlist Curator: {{playlistCrtr}}</b>            
+            <b>Artist: {{artist}}</b>
+			<br>
+            <b>Album: {{album}}</b>            
         </p>
-		<button class = "button" title="Share Playlist">SHARE</button>
+		<button class = "button" title="Share Song">SHARE</button>
+		<button class="button" title="Like Song">👍</button>
+		<button class="button" title="Dislike Song">👎</button>
+		<button class="button" title="Save to Favorite">➕</button>
+		<button class="button" title="Comment" (click)="open(comment)">💬</button>
+		
     <div class="col green-bg">
-        <h3>Song List</h3>
-        <a *ngFor="let item of playlistItems; index as i;">
-            <app-song-info-popout-item [imgPath]="item[0]" [albumPath]="item[1]" [song]="item[2]" [artist]="item[3]" [album]="item[4]" [link]=""></app-song-info-popout-item>
+        <h3>Song Info</h3>
+        <a *ngFor="let item of songInfoItems; index as i;">
+            <app-song-info-popout-item [infoType]="item[0]" [info]="item[1]" [link]=""></app-song-info-popout-item>
         </a>
     </div>
 
 </div>
+<ng-template #comment let-modal>
+
+    <app-comment-popout></app-comment-popout>
+
+</ng-template>

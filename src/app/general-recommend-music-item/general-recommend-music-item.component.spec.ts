@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { GeneralRecommendMusicItemComponent } from './general-recommend-music-item.component';
 
 describe('GeneralRecommendMusicItemComponent', () => {
