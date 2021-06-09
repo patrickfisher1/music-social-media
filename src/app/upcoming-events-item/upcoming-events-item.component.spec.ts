@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { UpcomingEventsItemComponent } from './upcoming-events-item.component';
 
 describe('UpcomingEventsItemComponent', () => {

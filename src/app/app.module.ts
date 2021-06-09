@@ -23,6 +23,10 @@ import { PlaylistPopoutComponent } from './playlist-popout/playlist-popout.compo
 import { PlaylistPopoutItemComponent } from './playlist-popout-item/playlist-popout-item.component';
 import { CommentPopoutComponent } from './comment-popout/comment-popout.component';
 import { CommentPopoutItemComponent } from './comment-popout-item/comment-popout-item.component';
+import { SongInfoPopoutComponent } from './song-info-popout/song-info-popout.component';
+import { SongInfoPopoutItemComponent } from './song-info-popout-item/song-info-popout-item.component';
+import { EventInfoPopoutComponent } from './event-info-popout/event-info-popout.component';
+import { EventInfoPopoutItemComponent } from './event-info-popout-item/event-info-popout-item.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +49,11 @@ import { CommentPopoutItemComponent } from './comment-popout-item/comment-popout
     PlaylistPopoutComponent,
     PlaylistPopoutItemComponent,
     CommentPopoutComponent,
-    CommentPopoutItemComponent
+    CommentPopoutItemComponent,
+    SongInfoPopoutComponent,
+    SongInfoPopoutItemComponent,
+    EventInfoPopoutComponent,
+    EventInfoPopoutItemComponent
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

@@ -1,4 +1,4 @@
-<a href="{{link}}">
+<a (click)="open(songInfo)">
     <div class="col container">
         <div class="row">
             <img src="{{imgPath}}" class="profile-img">  
@@ -13,3 +13,8 @@
         </div>
     </div>
 </a>
+<ng-template #songInfo let-modal>
+
+    <app-song-info-popout></app-song-info-popout>
+
+</ng-template>
