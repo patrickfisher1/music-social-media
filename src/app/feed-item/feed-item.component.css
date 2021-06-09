@@ -29,6 +29,10 @@ div:hover {
   border-radius: 20px;
 
 }
+.hidden-modal .modal-content {
+  background: none;
+  border: none;
+}
 .profile-img {
   width: 40px;
   height: 40px;

@@ -24,6 +24,11 @@
   margin: .5em .5em;
   
 }
+.hidden-modal .modal-content {
+  background: none;
+  border: none;
+}
+
 
 a {
   text-decoration: none;

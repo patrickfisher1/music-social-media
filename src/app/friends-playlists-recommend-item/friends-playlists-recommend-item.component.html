@@ -1,4 +1,4 @@
-<a href="{{link}}">
+<a (click)="open(content)">
     <div class="col container">
         <div class="info">
          <p>{{playlistName}}</p>
@@ -6,3 +6,8 @@
         </div>
     </div>
 </a>
+<ng-template #content let-modal>
+
+    <app-playlist-popout></app-playlist-popout>
+
+</ng-template>
