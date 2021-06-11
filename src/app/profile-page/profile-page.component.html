@@ -30,7 +30,7 @@
     </div>
     <div class="col red-bg">
         <h3>Highlighted Albums/Artists</h3>
-        <a *ngFor="let item of highlightedAlbumsArtists; index as i;">
+        <a (click)="open(artistInfo)" *ngFor="let item of highlightedAlbumsArtists; index as i;">
             <app-info-image [text]="item[0]" [imgPath]="item[1]"></app-info-image>
         </a>
     </div>
@@ -45,5 +45,11 @@
 <ng-template #songInfo let-modal>
 
     <app-song-info-popout></app-song-info-popout>
+
+</ng-template>
+
+<ng-template #artistInfo let-modal>
+
+    <app-artist-info-popout></app-artist-info-popout>
 
 </ng-template>

@@ -27,6 +27,16 @@ import { SongInfoPopoutComponent } from './song-info-popout/song-info-popout.com
 import { SongInfoPopoutItemComponent } from './song-info-popout-item/song-info-popout-item.component';
 import { EventInfoPopoutComponent } from './event-info-popout/event-info-popout.component';
 import { EventInfoPopoutItemComponent } from './event-info-popout-item/event-info-popout-item.component';
+
+import { AlbumInfoPopoutComponent } from './album-info-popout/album-info-popout.component';
+import { AlbumInfoPopoutItemComponent } from './album-info-popout-item/album-info-popout-item.component';
+import { AlbumTracksPopoutItemComponent } from './album-tracks-popout-item/album-tracks-popout-item.component';
+
+import { ArtistInfoPopoutComponent } from './artist-info-popout/artist-info-popout.component';
+import { ArtistInfoPopoutItemComponent } from './artist-info-popout-item/artist-info-popout-item.component';
+import { ArtistAlbumsPopoutItemComponent } from './artist-albums-popout-item/artist-albums-popout-item.component';
+
+
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
@@ -55,7 +65,13 @@ import { FormsModule } from '@angular/forms';
     SongInfoPopoutComponent,
     SongInfoPopoutItemComponent,
     EventInfoPopoutComponent,
-    EventInfoPopoutItemComponent
+    EventInfoPopoutItemComponent,
+	AlbumInfoPopoutComponent,
+	AlbumInfoPopoutItemComponent,
+	AlbumTracksPopoutItemComponent,
+	ArtistInfoPopoutComponent,
+	ArtistInfoPopoutItemComponent,
+	ArtistAlbumsPopoutItemComponent
   ],
   imports: [
     BrowserModule,

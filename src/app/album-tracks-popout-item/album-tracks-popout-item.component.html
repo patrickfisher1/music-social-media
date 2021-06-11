@@ -1,0 +1,20 @@
+<a (click)="open(songInfo)">
+    <div class="col container">
+        <div class="row">
+            <img src="{{imgPath}}" class="profile-img">  
+        </div>
+        <div class="row">
+        <img src="{{albumPath}}" class="album-img">
+        </div>
+        <div class="info">
+        <p>{{song}}</p>
+        <p>{{artist}}</p>
+        <p>{{album}}</p>
+        </div>
+    </div>
+</a>
+<ng-template #songInfo let-modal>
+
+    <app-song-info-popout></app-song-info-popout>
+
+</ng-template>
