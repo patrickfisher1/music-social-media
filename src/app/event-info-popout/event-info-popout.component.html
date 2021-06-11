@@ -18,6 +18,12 @@
 		<button class="button" title="Comment" (click)="open(comment)">💬</button>
 		
     <div class="col green-bg">
+        <h3>Artist Lineup</h3>
+        <a (click)="open(albumInfo)" *ngFor="let item of eventLineup; index as i;">
+            <app-event-lineup-popout-item [imgPath]="item[0]" [albumPath]="item[1]" [artist]="item[2]" [link]=""></app-event-lineup-popout-item>
+        </a>
+    </div>
+	<div class="col green-bg">
         <h3>General Info</h3>
         <a *ngFor="let item of eventInfoPopoutItems; index as i;">
             <app-event-info-popout-item [infoType]="item[0]" [info]="item[1]" [link]=""></app-event-info-popout-item>

@@ -1,19 +1,15 @@
-<a>
+<a (click)="open(artistInfo)">
     <div class="col container">
         <div class="row">
             <img src="{{imgPath}}" class="profile-img">  
         </div>
-        <div class="row">
-        <img src="{{albumPath}}" class="album-img">
-        </div>
         <div class="info">
         <p>{{artist}}</p>
-        <p>{{album}}</p>
         </div>
     </div>
 </a>
-<ng-template #albumInfo let-modal>
+<ng-template #artistInfo let-modal>
 
-    <app-album-info-popout></app-album-info-popout>
+    <app-artist-info-popout></app-artist-info-popout>
 
 </ng-template>
