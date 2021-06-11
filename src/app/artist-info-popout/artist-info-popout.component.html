@@ -1,0 +1,37 @@
+<div id="flexcontainer">
+    <div class="col blue-bg" style="text-align: left;padding: 3em;">
+        <h3>Artist Info</h3>
+        <img src="https://picsum.photos/200" class="art-img playlist-img">
+        <p>
+            <b>{{artistName}}</b>
+            <br>
+        </p>
+		<button class = "button" title="Share Artist">SHARE</button>
+		<button class="button" title="Like Artist">👍</button>
+		<button class="button" title="Dislike Artist">👎</button>
+		<button class="button" title="Save to Favorite Artists">➕</button>
+		<button class="button" title="Comment" (click)="open(comment)">💬</button>
+    <div class="col green-bg">
+        <h3>Album List</h3>
+        <a (click)="open(albumInfo)" *ngFor="let item of artistAlbums; index as i;">
+            <app-artist-albums-popout-item [imgPath]="item[0]" [albumPath]="item[1]" [song]="item[2]" [artist]="item[3]" [album]="item[4]" [link]=""></app-artist-albums-popout-item>
+        </a>
+    </div>
+	<div class="col green-bg">
+        <h3>Artist Info</h3>
+        <a *ngFor="let item of artistInfoItems; index as i;">
+            <app-artist-info-popout-item [infoType]="item[0]" [info]="item[1]" [link]=""></app-artist-info-popout-item>
+        </a>
+    </div>
+
+</div>
+<ng-template #comment let-modal>
+
+    <app-comment-popout></app-comment-popout>
+
+</ng-template>
+<ng-template #albumInfo let-modal>
+
+    <app-album-info-popout></app-album-info-popout>
+
+</ng-template>
