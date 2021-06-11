@@ -1,15 +1,31 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { CommentPopoutComponent } from '../comment-popout/comment-popout.component';
+import { debounceTime, distinctUntilChanged, map, tap } from 'rxjs/operators';
+import { FormControl, NgModel } from '@angular/forms';
+import { Observable, OperatorFunction } from 'rxjs';
 
 
+const typeaheadResults = ['Patrick', 'Kevin', 'Songs', 'Artists', 'Albums', 'Playlists'];
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.css'],
 })
 export class MainPageComponent implements OnInit {
-  constructor(private modalService: NgbModal) {}
+  public model: NgModel;
+
+  search: OperatorFunction<string, readonly string[]> = (text$: Observable<string>) =>
+    text$.pipe(
+      debounceTime(200),
+      distinctUntilChanged(),
+      map(term => term.length < 2 ? []
+        : typeaheadResults.filter(v => v.toLowerCase().indexOf(term.toLowerCase()) > -1).slice(0, 10))
+    )
+  searchControl;
+
+  constructor(private modalService: NgbModal) {
+    this.searchControl = new FormControl('');
+  }
 
   feedItems: string[][] = [];
   friendsRecentsItems: string[][] = [];
@@ -18,6 +34,10 @@ export class MainPageComponent implements OnInit {
   upcomingEventsItems: string[][] = [];
     open(content): void {
     this.modalService.open(content, { modalDialogClass: 'hidden-modal' });
+  }
+
+  onSearch() {
+
   }
 
   ngOnInit(): void {
