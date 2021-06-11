@@ -18,7 +18,7 @@
     </div>
     <div class="col blue-bg">
         <h3>Recently Played</h3>
-        <a *ngFor="let item of recentlyPlayed; index as i;">
+        <a (click)="open(songInfo)" *ngFor="let item of recentlyPlayed; index as i;">
             <app-info-image [text]="item[0]" [imgPath]="item[1]"></app-info-image>
         </a>
     </div>
@@ -39,5 +39,11 @@
 <ng-template #content let-modal>
 
     <app-playlist-popout></app-playlist-popout>
+
+</ng-template>
+
+<ng-template #songInfo let-modal>
+
+    <app-song-info-popout></app-song-info-popout>
 
 </ng-template>
