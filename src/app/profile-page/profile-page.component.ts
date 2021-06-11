@@ -1,13 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { PlaylistPopoutComponent } from '../playlist-popout/playlist-popout.component';
 
 @Component({
   selector: 'app-profile-page',
   templateUrl: './profile-page.component.html',
-  styleUrls: ['./profile-page.component.css']
+  styleUrls: ['./profile-page.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ProfilePageComponent implements OnInit {
+  constructor(private modalService: NgbModal) {}
 
-  constructor() { }
   firstName = 'Patrick';
   lastName = 'Fisher';
   location = 'Chicago, IL';
@@ -18,6 +21,9 @@ export class ProfilePageComponent implements OnInit {
   recentlyPlayed: string[][] = [];
   highlightedPlaylists: string[][] = [];
   highlightedAlbumsArtists: string[][] = [];
+  open(content): void {
+    this.modalService.open(content, { modalDialogClass: 'hidden-modal' });
+  }
 
   ngOnInit(): void {
     this.recentlyPlayed.push(['song 1', 'https://picsum.photos/200']);
@@ -36,10 +42,22 @@ export class ProfilePageComponent implements OnInit {
     this.highlightedPlaylists.push(['playlist 3', 'https://picsum.photos/200']);
     this.highlightedPlaylists.push(['playlist 4', 'https://picsum.photos/200']);
 
-    this.highlightedAlbumsArtists.push(['album 1', 'https://picsum.photos/200']);
-    this.highlightedAlbumsArtists.push(['album 2', 'https://picsum.photos/200']);
-    this.highlightedAlbumsArtists.push(['artist 3', 'https://picsum.photos/200']);
-    this.highlightedAlbumsArtists.push(['artist 4', 'https://picsum.photos/200']);
+    this.highlightedAlbumsArtists.push([
+      'album 1',
+      'https://picsum.photos/200',
+    ]);
+    this.highlightedAlbumsArtists.push([
+      'album 2',
+      'https://picsum.photos/200',
+    ]);
+    this.highlightedAlbumsArtists.push([
+      'artist 3',
+      'https://picsum.photos/200',
+    ]);
+    this.highlightedAlbumsArtists.push([
+      'artist 4',
+      'https://picsum.photos/200',
+    ]);
 
     this.friendsList.push(['Friendfirst FriendLast', 'friend_url']);
     this.friendsList.push(['Friendfirst FriendLast', 'friend_url']);
@@ -47,5 +65,4 @@ export class ProfilePageComponent implements OnInit {
     this.friendsList.push(['Friendfirst FriendLast', 'friend_url']);
     this.friendsList.push(['Friendfirst FriendLast', 'friend_url']);
   }
-
 }

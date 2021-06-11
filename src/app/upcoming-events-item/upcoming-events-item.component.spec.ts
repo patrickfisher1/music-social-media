@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { UpcomingEventsItemComponent } from './upcoming-events-item.component';
 
 describe('UpcomingEventsItemComponent', () => {
@@ -8,9 +7,8 @@ describe('UpcomingEventsItemComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UpcomingEventsItemComponent ]
-    })
-    .compileComponents();
+      declarations: [UpcomingEventsItemComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

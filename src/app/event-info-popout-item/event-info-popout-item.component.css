@@ -1,0 +1,63 @@
+.art-img {
+  width: 120px;
+  height: 120px;
+  background-color: grey;
+  margin: 0 1em;
+}
+.col {
+  display: flex;
+  align-items: center;
+  margin: .5em .5em;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: .5em .5em;
+  
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin: .5em .5em;
+  
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+div:hover {
+  opacity: 75%;
+}
+.container {
+  background-color: rgba(255, 255, 0, 0.2);
+  padding-right: 1em;
+  width: 96%;
+  border-radius: 20px;
+
+}
+.profile-img {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.album-img {
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  clip-path: square(50% at 50% 50%);
+}
+.hidden-modal .modal-content {
+  background: none;
+  border: none;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}

@@ -5,12 +5,12 @@
 }
 .green-bg {
   height: 800px;
-  background: #49821D;
+  background: #49821d;
   border-radius: 20px;
 }
 .red-bg {
   height: 800px;
-  background: #A52F2F;
+  background: #a52f2f;
   border-radius: 20px;
 }
 
@@ -28,5 +28,10 @@
   clip-path: circle(80% at 50% 50%);
 }
 h3 {
-  padding: .625rem 0;
+  padding: 0.625rem 0;
+}
+
+.hidden-modal .modal-content {
+  background: none;
+  border: none;
 }

@@ -49,7 +49,10 @@ div:hover {
   padding: 0;
   clip-path: square(50% at 50% 50%);
 }
-
+.hidden-modal .modal-content {
+  background: none;
+  border: none;
+}
 p{
     margin: 0;
     padding: 0;

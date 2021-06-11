@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { GeneralRecommendMusicItemComponent } from './general-recommend-music-item.component';
 
 describe('GeneralRecommendMusicItemComponent', () => {
@@ -8,9 +7,8 @@ describe('GeneralRecommendMusicItemComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GeneralRecommendMusicItemComponent ]
-    })
-    .compileComponents();
+      declarations: [GeneralRecommendMusicItemComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

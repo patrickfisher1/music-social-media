@@ -1,0 +1,14 @@
+<div id="flexcontainer">
+    <div class="col blue-bg" style="text-align: left;padding: 3em;">
+		<div class="col green-bg">
+          <h3>Comments</h3>
+            <a *ngFor="let item of commentItems; index as i;">
+              <app-comment-popout-item [text]="item[0]" [imgPath]="item[1]" [username]="item[2]"></app-comment-popout-item>
+            </a>
+        </div>
+		
+		<h3>Username</h3>
+        <img src="assets/img/profile-img.png" class="art-img playlist-img">
+		<div type="text" class = "comment-box"></div>
+		<button class = "button" title="Send Comment">SUBMIT</button>
+</div>

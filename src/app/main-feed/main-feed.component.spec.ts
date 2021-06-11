@@ -8,9 +8,8 @@ describe('MainFeedComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MainFeedComponent ]
-    })
-    .compileComponents();
+      declarations: [MainFeedComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

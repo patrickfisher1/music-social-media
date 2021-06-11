@@ -1,0 +1,32 @@
+<div id="flexcontainer">
+    <div class="col blue-bg" style="text-align: left;padding: 3em;">
+        <h3>Event Info</h3>
+        <img src="https://picsum.photos/200" class="art-img playlist-img">
+        <p>
+            <b>{{eventName}}</b>
+            <br>
+            <b>Date: {{date}}</b>
+            <br>
+            <b>Venue: {{venue}}</b>
+            <br>
+            <b>Hosted By: {{host}}</b>            
+        </p>
+		<button class = "button" title="Share Event">SHARE</button>
+		<button class="button" title="Like">👍</button>
+		<button class="button" title="Dislike">👎</button>
+		<button class="button" title="Add to Calendar">📅</button>
+		<button class="button" title="Comment" (click)="open(comment)">💬</button>
+		
+    <div class="col green-bg">
+        <h3>General Info</h3>
+        <a *ngFor="let item of eventInfoPopoutItems; index as i;">
+            <app-event-info-popout-item [infoType]="item[0]" [info]="item[1]" [link]=""></app-event-info-popout-item>
+        </a>
+    </div>
+
+</div>
+<ng-template #comment let-modal>
+
+    <app-comment-popout></app-comment-popout>
+
+</ng-template>
