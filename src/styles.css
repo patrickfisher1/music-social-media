@@ -31,3 +31,8 @@ body {
     display: block;
   }
 }
+
+.hidden-modal .modal-content {
+  background: none;
+  border: none;
+}

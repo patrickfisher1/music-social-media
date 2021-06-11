@@ -27,6 +27,8 @@ import { SongInfoPopoutComponent } from './song-info-popout/song-info-popout.com
 import { SongInfoPopoutItemComponent } from './song-info-popout-item/song-info-popout-item.component';
 import { EventInfoPopoutComponent } from './event-info-popout/event-info-popout.component';
 import { EventInfoPopoutItemComponent } from './event-info-popout-item/event-info-popout-item.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,13 @@ import { EventInfoPopoutItemComponent } from './event-info-popout-item/event-inf
     EventInfoPopoutComponent,
     EventInfoPopoutItemComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    HttpClientModule,
+    FormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

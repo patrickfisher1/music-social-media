@@ -1,15 +1,17 @@
-<div class="container"
-	 fxLayout
-     fxLayoutAlign="center"
-     fxLayoutGap="10px"
->
-    
-	<div class="row top-bar">
-        <h3>Search and Login Bar</h3>     		
+<div class="container" fxLayout fxLayoutAlign="center" fxLayoutGap="10px">
+
+    <div class="top-bar justify-items-center">
+        <h3>Search and Login Bar</h3>
+        <form class="row justify-content-center">
+            <label class="sr-only" for="searchBar">Name</label>
+            <input type="text" name="search" class="form-control-lg mx-lg-3" id="searchBar" 
+                placeholder="Search (Friends, Artists, Songs)" [(ngModel)]="model" [ngbTypeahead]="search">
+            <button type="submit" class="btn btn-primary btn-lg">Search!</button>
+        </form>
     </div>
 
 
-<div id="flexcontainer">	 
+    <div id="flexcontainer">
 
 	<div class="col rec-mus">
         <h3>Recommended Music</h3>  

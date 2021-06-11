@@ -7,6 +7,10 @@
   padding: 5px;
 }
 
+#searchBar {
+  width: 25rem;
+}
+
 .container{
 	margin: 10px;
 	flex-flow: column wrap;
@@ -17,8 +21,9 @@
   margin: 0 .75em;
   text-align: center;
   overflow-y: auto;	
-  height: 100px;
+  height: 120px;
   width: 133%;
+  overflow-x: hidden;
   background: #2D6F22;
   border-radius: 20px;
   border: 1px solid #555555;
